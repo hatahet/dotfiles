@@ -38,6 +38,7 @@ syntax: regexp
 ^\.gimp-2.6$
 ^\.gnome2$
 ^\.gnuplot_history$
+^\.gnuplot-wxt$
 ^\.google$
 ^\.gnupg$
 ^\.gstreamer-0.10$
