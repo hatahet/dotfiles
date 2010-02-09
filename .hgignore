@@ -48,3 +48,4 @@ syntax: regexp
 ^\.viminfo$
 ^\.vim/spell$
 ^\.w3m$
+^\.wapi$
