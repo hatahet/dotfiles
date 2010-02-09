@@ -45,3 +45,6 @@ syntax: regexp
 ^\.Skype$
 ^\.texmf-var$
 ^\.thumbnails$
+^\.viminfo$
+^\.vim/spell$
+^\.w3m$
