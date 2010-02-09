@@ -1,0 +1,45 @@
+#!/bin/sh
+usage() {
+    cat <<EOF | par
+Usage: `basename $0` [GCC_ARGS]
+
+Creates a temp dir containing a scratch C file, then opens it in Vim insert
+mode. When the Vim session ends, the file is compiled with gcc and its output
+is displayed on the terminal. This allows you to quickly test theories about
+how C behaves, thus gaining a better understanding of edge cases and
+semantics.
+EOF
+}
+
+if [ x"$1" = x"--help" ]
+then
+    usage
+    exit 0
+fi
+
+foo=`mktemp -td testc.XXXXXX`
+input=$foo/test.c
+output=$foo/test
+
+cat >$input <<EOF
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+  {
+    
+    return 0;
+  }
+EOF
+
+vim +6 '+setf c' -c 'startinsert!' $input
+
+echo "Input:"
+cat $input
+
+gcc -x c $input -o $output $@
+
+echo "Output:"
+$output
+rm $input $output
+rmdir $foo

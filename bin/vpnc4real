@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sudo vpnc-disconnect
+sudo killall -9 vpnc
+sudo vpnc case
