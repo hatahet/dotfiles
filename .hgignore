@@ -36,6 +36,7 @@ syntax: regexp
 ^\.google$
 ^\.ICEauthority$
 ^\.ipython$
+^\.irb_history$
 ^\.local$
 ^\.macromedia$
 ^\.mission-control$
