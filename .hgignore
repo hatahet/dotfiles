@@ -42,7 +42,9 @@ syntax: regexp
 ^\.openoffice\.org$
 ^\.Private$
 ^\.pulse$
+^\.ssh$
 ^\.Skype$
+^\.subversion$
 ^\.texmf-var$
 ^\.thumbnails$
 ^\.viminfo$
