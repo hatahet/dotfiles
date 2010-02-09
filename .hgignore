@@ -1,0 +1,47 @@
+syntax: regexp
+
+# Ignore git repos everywhere
+(^|/)\.git($|/)
+
+# Ignore common Ubuntu directories
+^Desktop$
+^Documents$
+^Downloads$
+^Movies$
+^Music$
+^Pictures$
+^Ubuntu One$
+^Videos$
+
+# My commonly used directories
+^code$
+^scratch$
+^tmp$
+^writing$
+
+# Apps and dynamic/local stuff
+^\.adobe$
+^\.appdata$
+^\.cabal/packages$
+^\.cache$
+^\.compiz$
+^\.config$
+^\.dbus$
+^\.dc\+\+$
+^\.FBReader$
+^\.fontconfig$
+^\.gconf$
+^\.gimp-2.6$
+^\.gnome2$
+^\.google$
+^\.ICEauthority$
+^\.ipython$
+^\.local$
+^\.macromedia$
+^\.mozilla$
+^\.openoffice\.org$
+^\.Private$
+^\.pulse$
+^\.Skype$
+^\.texmf-var$
+^\.thumbnails$
