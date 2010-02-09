@@ -1,0 +1,19 @@
+[ui]
+username = Steve Dee <steve@smartercode.net>
+ignore = ~/.global_hgignore
+verbose = True
+
+[defaults]
+addremove = --similarity 100
+log = --graph --style compact --git
+
+[pager]
+pager=LESS='FSRX' less
+ignore=version, update, push, pull, merge, fetch, convert, clone, record, crecord, grep, status, add, remove, revert
+
+[extensions]
+graphlog =
+pager =
+color =
+fetch =
+hgext.mq =
