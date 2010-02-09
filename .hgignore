@@ -32,11 +32,14 @@ syntax: regexp
 ^\.dbus$
 ^\.dc\+\+$
 ^\.dmrc$
+^\.ecryptfs$
+^\.esd_auth$
 ^\.FBReader$
 ^\.fontconfig$
 ^\.gconf$
 ^\.gconfd$
 ^\.gimp-2.6$
+^\.gksu.lock$
 ^\.gnome2$
 ^\.gnuplot_history$
 ^\.gnuplot-wxt$
