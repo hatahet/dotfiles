@@ -37,6 +37,7 @@ syntax: regexp
 ^\.gconf$
 ^\.gimp-2.6$
 ^\.gnome2$
+^\.gnuplot_history$
 ^\.google$
 ^\.gnupg$
 ^\.gstreamer-0.10$
