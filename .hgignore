@@ -46,6 +46,7 @@ syntax: regexp
 ^\.Private$
 ^\.pulse$
 ^\.pulse-cookie$
+^\.python-eggs$
 ^\.rnd$
 ^\.ssh$
 ^\.Skype$
