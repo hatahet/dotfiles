@@ -22,6 +22,9 @@ syntax: regexp
 # Apps and dynamic/local stuff
 ^\.adobe$
 ^\.appdata$
+^\.aptitude$
+^\.audacity-data$
+^\.bash_history$
 ^\.cabal/packages$
 ^\.cache$
 ^\.compiz$
@@ -34,6 +37,7 @@ syntax: regexp
 ^\.gimp-2.6$
 ^\.gnome2$
 ^\.google$
+^\.gnupg$
 ^\.gstreamer-0.10$
 ^\.gtk-bookmarks$
 ^\.ICEauthority$
