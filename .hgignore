@@ -34,6 +34,7 @@ syntax: regexp
 ^\.gimp-2.6$
 ^\.gnome2$
 ^\.google$
+^\.gstreamer-0.10$
 ^\.ICEauthority$
 ^\.ipython$
 ^\.irb_history$
