@@ -41,10 +41,10 @@ syntax: regexp
 ^\.gimp-2.6$
 ^\.gksu.lock$
 ^\.gnome2$
+^\.gnupg$
 ^\.gnuplot_history$
 ^\.gnuplot-wxt$
 ^\.google$
-^\.gnupg$
 ^\.gstreamer-0.10$
 ^\.gtk-bookmarks$
 ^\.ICEauthority$
@@ -61,8 +61,8 @@ syntax: regexp
 ^\.pulse-cookie$
 ^\.python-eggs$
 ^\.rnd$
-^\.ssh$
 ^\.Skype$
+^\.ssh$
 ^\.subversion$
 ^\.sudo_as_admin_successful$
 ^\.texmf-var$
