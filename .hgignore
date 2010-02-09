@@ -25,7 +25,7 @@ syntax: regexp
 ^\.aptitude$
 ^\.audacity-data$
 ^\.bash_history$
-^\.cabal/packages$
+^\.cabal$
 ^\.cache$
 ^\.compiz$
 ^\.config$
