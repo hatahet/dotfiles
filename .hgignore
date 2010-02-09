@@ -55,6 +55,7 @@ syntax: regexp
 ^\.macromedia$
 ^\.mission-control$
 ^\.mozilla$
+^\.mysql_history$
 ^\.openoffice\.org$
 ^\.Private$
 ^\.pulse$
