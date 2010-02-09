@@ -38,10 +38,12 @@ syntax: regexp
 ^\.ipython$
 ^\.local$
 ^\.macromedia$
+^\.mission-control$
 ^\.mozilla$
 ^\.openoffice\.org$
 ^\.Private$
 ^\.pulse$
+^\.rnd$
 ^\.ssh$
 ^\.Skype$
 ^\.subversion$
