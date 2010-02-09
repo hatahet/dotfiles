@@ -44,6 +44,7 @@ syntax: regexp
 ^\.openoffice\.org$
 ^\.Private$
 ^\.pulse$
+^\.pulse-cookie$
 ^\.rnd$
 ^\.ssh$
 ^\.Skype$
