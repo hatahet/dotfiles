@@ -50,6 +50,7 @@ syntax: regexp
 ^\.ssh$
 ^\.Skype$
 ^\.subversion$
+^\.sudo_as_admin_successful$
 ^\.texmf-var$
 ^\.thumbnails$
 ^\.viminfo$
