@@ -7,6 +7,9 @@ verbose = True
 addremove = --similarity 100
 log = --graph --style compact --git
 
+[diff]
+git = 1
+
 [pager]
 pager=LESS='FSRX' less
 ignore=version, update, push, pull, merge, fetch, convert, clone, record, crecord, grep, status, add, remove, revert
