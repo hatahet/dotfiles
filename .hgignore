@@ -31,6 +31,7 @@ syntax: regexp
 ^\.config$
 ^\.dbus$
 ^\.dc\+\+$
+^\.dmrc$
 ^\.FBReader$
 ^\.fontconfig$
 ^\.gconf$
