@@ -37,6 +37,7 @@ syntax: regexp
 ^\.ICEauthority$
 ^\.ipython$
 ^\.irb_history$
+^\.lesshst$
 ^\.local$
 ^\.macromedia$
 ^\.mission-control$
