@@ -38,6 +38,7 @@ syntax: regexp
 ^\.fontconfig$
 ^\.gconf$
 ^\.gconfd$
+^\.gegl-0.0$
 ^\.gimp-2.6$
 ^\.gksu.lock$
 ^\.gnome2$
@@ -69,6 +70,7 @@ syntax: regexp
 ^\.sudo_as_admin_successful$
 ^\.texmf-var$
 ^\.thumbnails$
+^\.update-manager-core$
 ^\.viminfo$
 ^\.vim/spell$
 ^\.w3m$
