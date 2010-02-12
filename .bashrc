@@ -103,6 +103,7 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias v='vim'
 alias g='hub'
+alias h='hg'
 c() {
 	cd "$@"
 	ls
