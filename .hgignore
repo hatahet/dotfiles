@@ -51,6 +51,7 @@ syntax: regexp
 ^\.ICEauthority$
 ^\.ipython$
 ^\.irb_history$
+^\.irssi/(default\.theme|config\.autosave)$
 ^\.lesshst$
 ^\.local$
 ^\.macromedia$
