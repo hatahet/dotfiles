@@ -114,6 +114,9 @@ else
     complete -F _cd -o nospace c
 fi
 alias mq='hg -R $(hg root)/.hg/patches'
+s() {
+    ssh "$1" -t screen -D -R login
+}
 
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH
