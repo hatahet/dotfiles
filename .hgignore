@@ -59,6 +59,7 @@ syntax: regexp
 ^\.mozilla$
 ^\.mysql_history$
 ^\.openoffice\.org$
+^\.pki$
 ^\.Private$
 ^\.pulse$
 ^\.pulse-cookie$
