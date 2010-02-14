@@ -76,3 +76,4 @@ syntax: regexp
 ^\.vim/spell$
 ^\.w3m$
 ^\.wapi$
+^\.xsession-errors(\.old)?$
