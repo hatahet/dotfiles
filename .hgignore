@@ -15,6 +15,7 @@ syntax: regexp
 
 # My commonly used directories
 ^code$
+^pkg$
 ^scratch$
 ^tmp$
 ^writing$
