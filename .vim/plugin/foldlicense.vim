@@ -4,4 +4,4 @@ function! FoldCopyright()
         1,/Copyright .*\. All Rights Reserved\./;/limitations under the License\./fold
     endif
 endfunction
-au BufRead *.js silent! call FoldCopyright()
+au BufRead *.\(js\|html\) silent! call FoldCopyright()
