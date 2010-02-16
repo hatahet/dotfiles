@@ -1,8 +1,5 @@
 syntax: regexp
 
-# Ignore git repos everywhere
-(^|/)\.git($|/)
-
 # Ignore common Ubuntu directories
 ^Desktop$
 ^Documents$
