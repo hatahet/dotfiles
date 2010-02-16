@@ -18,6 +18,7 @@ syntax: regexp
 ^pkg$
 ^scratch$
 ^tmp$
+^web$
 ^writing$
 
 # Apps and dynamic/local stuff
