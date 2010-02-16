@@ -81,4 +81,5 @@ syntax: regexp
 ^\.vim/spell$
 ^\.w3m$
 ^\.wapi$
+^\.Xauthority$
 ^\.xsession-errors(\.old)?$
