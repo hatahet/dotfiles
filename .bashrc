@@ -116,7 +116,7 @@ fi
 alias mq='hg -R $(hg root)/.hg/patches'
 
 s() {
-    ssh "$1" -t screen -D -R login
+    ssh $* -t -- 'screen -D -R login'
 }
 complete -F _ssh s
 
