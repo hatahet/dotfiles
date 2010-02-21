@@ -105,8 +105,8 @@ alias v='vim'
 alias g='hub'
 alias h='hg'
 c() {
-	cd "$@"
-	ls
+    cd "$@"
+    ls
 }
 if shopt -q cdable_vars; then
     complete -v -F _cd -o nospace c
