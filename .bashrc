@@ -106,7 +106,16 @@ alias v='vim'
 alias g='hub'
 alias h='hg'
 c() {
-    cd "$@"
+    case "$1" in
+    -L|-P)
+        opt=$1
+        shift
+        cd $opt "$@"
+        ;;
+    *)
+        cd "$@"
+        ;;
+    esac
     ls
 }
 if shopt -q cdable_vars; then
