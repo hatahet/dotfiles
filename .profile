@@ -24,3 +24,6 @@ fi
 if [ -d /opt/nrn/x86_64/bin/ ]; then
     PATH="$PATH:/opt/nrn/x86_64/bin/"
 fi
+
+export EDITOR=vim
+export PAGER=less
