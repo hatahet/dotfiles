@@ -64,7 +64,7 @@ syntax: regexp
 ^\.pulse$
 ^\.pulse-cookie$
 ^\.python-eggs$
-^\.recently-used.xbel$
+^\.recently-used(\.xbel)?$
 ^\.rnd$
 ^\.Skype$
 ^\.ssh$
