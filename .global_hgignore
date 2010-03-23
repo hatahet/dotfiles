@@ -5,3 +5,5 @@ syntax: regexp
 (^|/)\.(git|svn)$
 # LaTeX tempfiles
 \.(aux|bbl|blg|log)$
+# Compiled Python files
+.*\.pyc$
