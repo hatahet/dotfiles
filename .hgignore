@@ -75,7 +75,7 @@ syntax: regexp
 ^\.update-manager-core$
 ^\.update-notifier$
 ^\.viminfo$
-^\.vim/spell$
+^\.vim/(spell|\.netrwhist)$
 ^\.w3m$
 ^\.wapi$
 ^\.Xauthority$
