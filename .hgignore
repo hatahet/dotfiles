@@ -33,6 +33,7 @@ syntax: regexp
 ^\.dbus$
 ^\.dc\+\+$
 ^\.dmrc$
+^\.dropbox(-dist)?$
 ^\.ecryptfs$
 ^\.esd_auth$
 ^\.FBReader$
