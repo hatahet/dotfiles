@@ -4,6 +4,7 @@ syntax: regexp
 ^Desktop$
 ^Documents$
 ^Downloads$
+^Dropbox$
 ^Maildir$
 ^Movies$
 ^Music$
