@@ -99,6 +99,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+alias ai='sudo aptitude install'
+alias as='aptitude search'
+alias ah='aptitude show'
+
 alias l='ls'
 alias ll='ls -lh'
 alias la='ls -lha'
