@@ -57,8 +57,10 @@ syntax: regexp
 ^\.ipython$
 ^\.irb_history$
 ^\.irssi/(default\.theme|config\.autosave)$
+^\.java$
 ^\.lesshst$
 ^\.local$
+^\.m2$
 ^\.macromedia$
 ^\.mission-control$
 ^\.mozilla$
