@@ -4,6 +4,8 @@ syntax: regexp
 # Other VCS's repos
 (^|/)\.(git|svn)$
 # LaTeX tempfiles
-\.(aux|bbl|blg|log)$
+\.(aux|bbl|blg)$
+# Logfiles
+\.log$
 # Compiled Python files
 .*\.pyc$
