@@ -33,8 +33,8 @@ testport() {
 echo -n Connecting to $host:$port
 $ssh -N -f -p $port -D 1080 $host
 testport
-echo Done.
 PID=`pidof -s $ssh`
+echo Done: $PID.
 echo "kill $PID" >>$proxyoff
 echo "rm $proxyoff" >>$proxyoff
 
