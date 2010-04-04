@@ -30,7 +30,6 @@ testport() {
     fi
 }
 
-[ -d $HOME/tmp ] || mkdir $HOME/tmp
 echo -n Connecting to $host:$port
 $ssh -N -f -p $port -D 1080 $host
 testport
