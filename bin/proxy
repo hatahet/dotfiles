@@ -33,8 +33,8 @@ PID=`pidof -s $ssh`
 
 $iptcmd -F
 $iptcmd -P INPUT DROP
-$iptcmd -P OUTPUT DROP
 $iptcmd -A INPUT -i lo+ -j ACCEPT
 $iptcmd -A OUTPUT -o lo+ -j ACCEPT
 $iptcmd -A INPUT -s $ip -p tcp --sport $port -j ACCEPT
 $iptcmd -A OUTPUT -d $ip -p tcp --dport $port -j ACCEPT
+$iptcmd -A OUTPUT -j REJECT
