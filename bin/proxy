@@ -19,18 +19,21 @@ testport() {
     status=$?
     if [ $status -ne 0 ]
     then
+        echo -n .
         sleep 1
         testport
     fi
 }
 
-set -x
 [ -d $HOME/tmp ] || mkdir $HOME/tmp
+echo -n Connecting to $host
 $ssh -N -f -p $port -D 1080 $host
 testport
+echo Done.
 PID=`pidof -s $ssh`
 [ ! -z $PID ] && echo $PID >$HOME/tmp/autossh.pid
 
+set -x
 $iptcmd -F
 $iptcmd -P INPUT DROP
 $iptcmd -A INPUT -i lo+ -j ACCEPT
