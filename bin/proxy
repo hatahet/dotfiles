@@ -9,6 +9,12 @@ ssh='autossh'
 [ -x `which $ssh` ] || ssh='ssh'
 [ -x `which $ssh` ] || exit 3
 
+proxyoff=$HOME/bin/proxyoff
+echo "#!/bin/sh" >$proxyoff
+echo "cat $proxyoff" >>$proxyoff
+echo "$iptcmd -F" >>$proxyoff
+$iptcmd -S | sed "s=^=$iptcmd =" >>$proxyoff
+
 host=$1
 port=$2
 [ -z $port ] && port=22
@@ -31,7 +37,8 @@ $ssh -N -f -p $port -D 1080 $host
 testport
 echo Done.
 PID=`pidof -s $ssh`
-[ ! -z $PID ] && echo $PID >$HOME/tmp/autossh.pid
+echo "kill $PID" >>$proxyoff
+echo "rm $proxyoff" >>$proxyoff
 
 set -x
 $iptcmd -F
@@ -41,3 +48,4 @@ $iptcmd -A OUTPUT -o lo+ -j ACCEPT
 $iptcmd -A INPUT -s $ip -p tcp --sport $port -j ACCEPT
 $iptcmd -A OUTPUT -d $ip -p tcp --dport $port -j ACCEPT
 $iptcmd -A OUTPUT -j REJECT
+chmod +x $proxyoff

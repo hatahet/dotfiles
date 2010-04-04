@@ -22,6 +22,9 @@ syntax: regexp
 ^web$
 ^writing$
 
+# Proxy hax :-)
+^bin/proxyoff$
+
 # Apps and dynamic/local stuff
 ^\.adobe$
 ^\.appcfg_(cookies|nag)$
