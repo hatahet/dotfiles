@@ -133,6 +133,7 @@ s() {
     ssh $* -t -- 'screen -D -R login'
 }
 complete -F _ssh s
+complete -F _ssh proxy
 
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH
