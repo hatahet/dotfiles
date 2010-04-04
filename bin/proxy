@@ -3,14 +3,21 @@
 iptables=/sbin/iptables
 iptcmd="sudo $iptables"
 
-[ $# -eq 2 ] || exit 1
+[ $# -ge 1 ] || exit 1
 [ -x $iptables ] || exit 1
 
 host=$1
 port=$2
-ip=`dig +short "$host" a`
+[ -z $port ] && port=22
+ip=`dig +short "$host" a |egrep -v [A-Za-z]`
 
 set -x
+[ -d $HOME/tmp ] || mkdir $HOME/tmp
+autossh -N -p $port -D 1080 $host &
+PID=$!
+sleep 5
+[ ! -z $PID ] && echo $PID >$HOME/tmp/autossh.pid
+
 $iptcmd -F
 $iptcmd -P INPUT DROP
 $iptcmd -P OUTPUT DROP
@@ -18,9 +25,3 @@ $iptcmd -A INPUT -i lo+ -j ACCEPT
 $iptcmd -A OUTPUT -o lo+ -j ACCEPT
 $iptcmd -A INPUT -s $ip -p tcp --sport $port -j ACCEPT
 $iptcmd -A OUTPUT -d $ip -p tcp --dport $port -j ACCEPT
-set +x
-
-[ -d $HOME/tmp ] || mkdir $HOME/tmp
-autossh -N -p $port -D 1080 $ip &
-PID=$!
-echo $PID >$HOME/tmp/autossh.pid

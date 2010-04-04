@@ -9,4 +9,8 @@ $iptcmd -F
 $iptcmd -P INPUT ACCEPT
 $iptcmd -P OUTPUT ACCEPT
 
-[ -f $HOME/tmp/autossh.pid ] && kill `cat $HOME/tmp/autossh.pid`
+if [ -f $HOME/tmp/autossh.pid ]
+then
+    kill `cat $HOME/tmp/autossh.pid`
+    rm $HOME/tmp/autossh.pid
+fi
