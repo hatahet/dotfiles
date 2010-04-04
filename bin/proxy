@@ -11,7 +11,6 @@ ssh='autossh'
 
 proxyoff=$HOME/bin/proxyoff
 echo "#!/bin/sh" >$proxyoff
-echo "cat $proxyoff" >>$proxyoff
 echo "$iptcmd -F" >>$proxyoff
 $iptcmd -S | sed "s=^=$iptcmd =" >>$proxyoff
 
