@@ -1,0 +1,12 @@
+#!/bin/sh
+
+iptables=/sbin/iptables
+iptcmd="sudo $iptables"
+
+[ -x $iptables ] || exit 1
+
+$iptcmd -F
+$iptcmd -P INPUT ACCEPT
+$iptcmd -P OUTPUT ACCEPT
+
+[ -f $HOME/tmp/autossh.pid ] && kill `cat $HOME/tmp/autossh.pid`
