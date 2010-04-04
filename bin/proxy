@@ -2,20 +2,33 @@
 
 iptables=/sbin/iptables
 iptcmd="sudo $iptables"
+ssh='autossh'
 
 [ $# -ge 1 ] || exit 1
-[ -x $iptables ] || exit 1
+[ -x $iptables ] || exit 2
+[ -x `which $ssh` ] || ssh='ssh'
+[ -x `which $ssh` ] || exit 3
 
 host=$1
 port=$2
 [ -z $port ] && port=22
 ip=`dig +short "$host" a |egrep -v [A-Za-z]`
 
+testport() {
+    echo hi | nc 127.0.0.1 1080
+    status=$?
+    if [ $status -ne 0 ]
+    then
+        sleep 1
+        testport
+    fi
+}
+
 set -x
 [ -d $HOME/tmp ] || mkdir $HOME/tmp
-autossh -N -p $port -D 1080 $host &
-PID=$!
-sleep 5
+$ssh -N -f -p $port -D 1080 $host
+testport
+PID=`pidof -s $ssh`
 [ ! -z $PID ] && echo $PID >$HOME/tmp/autossh.pid
 
 $iptcmd -F
