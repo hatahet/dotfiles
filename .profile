@@ -29,8 +29,8 @@ if [ ! -d /tmp/vimswap ];  then
     mkdir /tmp/vimswap
 fi
 
-if [ ! -d /tmp/vimbackup ]; then
-    mkdir /tmp/vimbackup
+if [ ! -d /var/tmp/vimbackup ]; then
+    mkdir /var/tmp/vimbackup
 fi
 
 export EDITOR=vim
