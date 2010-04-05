@@ -32,3 +32,6 @@ se hlsearch
 se shortmess=atI
 
 noremap  :nohlsearch
+
+se backupdir=/var/tmp/vimbackup
+se dir=/tmp/vimswap
