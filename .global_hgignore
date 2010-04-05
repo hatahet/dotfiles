@@ -1,6 +1,4 @@
 syntax: regexp
-# Vim swap files
-(^|/)(\..*)?\.swp$
 # Other VCS's repos
 (^|/)\.(git|svn)$
 # LaTeX tempfiles
