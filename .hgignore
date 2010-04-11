@@ -25,6 +25,9 @@ syntax: regexp
 # Proxy hax :-)
 ^bin/proxyoff$
 
+# Waf junk
+^bin/.waf-1.5.16-387b718ca9d5b1d95de2d9b2d04408af$
+
 # Apps and dynamic/local stuff
 ^\.adobe$
 ^\.appcfg_(cookies|nag)$
