@@ -31,7 +31,7 @@ testport() {
 }
 
 echo -n Connecting to $host:$port
-$ssh -N -f -p $port -D 1080 $host
+$ssh -N -f -p $port -D 1080 $ip
 testport
 PID=`pidof -s $ssh`
 echo Done: $PID.
