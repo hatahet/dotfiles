@@ -17,6 +17,8 @@ $iptcmd -S | sed "s=^=$iptcmd =" >>$proxyoff
 host=$1
 port=$2
 [ -z $port ] && port=22
+user=$3
+[ -z $user ] && user=`id -un`
 ip=`dig +short "$host" a |egrep -v [A-Za-z]`
 
 testport() {
@@ -30,8 +32,8 @@ testport() {
     fi
 }
 
-echo -n Connecting to $host:$port
-$ssh -N -f -p $port -D 1080 $ip
+echo -n Connecting to $user@$host:$port
+$ssh -N -f -p "$port" -D 1080 "$user@$ip"
 testport
 PID=`pidof -s $ssh`
 echo Done: $PID.
