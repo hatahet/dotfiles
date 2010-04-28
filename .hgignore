@@ -64,6 +64,7 @@ syntax: regexp
 ^\.irb_history$
 ^\.irssi/(default\.theme|config\.autosave)$
 ^\.java$
+^\.kde$
 ^\.lesshst$
 ^\.local$
 ^\.m2$
