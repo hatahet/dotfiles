@@ -91,5 +91,6 @@ syntax: regexp
 ^\.vim/(spell|\.netrwhist)$
 ^\.w3m$
 ^\.wapi$
+^\.wine$
 ^\.Xauthority$
 ^\.xsession-errors(\.old)?$
