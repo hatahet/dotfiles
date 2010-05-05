@@ -4,12 +4,17 @@ iptables=/sbin/iptables
 iptcmd="sudo $iptables"
 ssh='autossh'
 
-[ $# -ge 1 ] || exit 1
-[ -x $iptables ] || exit 2
+die() {
+    echo $2 1>&2
+    exit $1
+}
+[ $# -ge 1 ] || die 1 "Not enough arguments"
+[ -x $iptables ] || die 2 "$iptables doesn't exist"
 [ -x `which $ssh` ] || ssh='ssh'
-[ -x `which $ssh` ] || exit 3
+[ -x `which $ssh` ] || die 3 "no ssh client found"
+[ -e $HOME/bin/proxyoff ] && die 4 "proxyoff exists; are you already proxied?"
 
-proxyoff=$HOME/bin/proxyoff
+proxyoff=`mktemp`
 echo "#!/bin/sh" >$proxyoff
 echo "$iptcmd -F" >>$proxyoff
 $iptcmd -S | sed "s=^=$iptcmd =" >>$proxyoff
@@ -48,4 +53,4 @@ $iptcmd -A INPUT -i lo+ -j ACCEPT
 $iptcmd -A OUTPUT -o lo+ -j ACCEPT
 $iptcmd -A INPUT -s $ip -p tcp --sport $port -j ACCEPT
 $iptcmd -A OUTPUT -d $ip -p tcp --dport $port -j ACCEPT
-chmod +x $proxyoff
+mv $proxyoff $HOME/bin/proxyoff && chmod +x $HOME/bin/proxyoff
