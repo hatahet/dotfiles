@@ -43,7 +43,7 @@ testport
 PID=`pidof -s $ssh`
 echo Done: $PID.
 echo "kill $PID" >>$proxyoff
-echo "rm $proxyoff" >>$proxyoff
+echo "rm $HOME/bin/proxyoff" >>$proxyoff
 
 set -x
 $iptcmd -F
