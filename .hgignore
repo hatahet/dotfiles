@@ -72,6 +72,7 @@ syntax: regexp
 ^\.mozilla$
 ^\.mysql_history$
 ^\.openoffice\.org$
+^\.openvpn$
 ^\.pki$
 ^\.Private$
 ^\.pulse$
