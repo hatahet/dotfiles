@@ -1,18 +1,12 @@
 syntax: regexp
 
 # Ignore common Ubuntu directories
-^Books$
 ^Desktop$
-^Documents$
 ^Downloads$
 ^Dropbox$
 ^Maildir$
 ^Movies$
-^Music$
-^Pictures$
-^Public$
 ^Ubuntu One$
-^Videos$
 
 # My commonly used directories
 ^code$
