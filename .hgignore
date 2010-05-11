@@ -20,6 +20,7 @@ syntax: regexp
 ^scratch$
 ^tmp$
 ^web$
+^workspace$
 ^writing$
 
 # Proxy hax :-)
@@ -39,10 +40,12 @@ syntax: regexp
 ^\.cache$
 ^\.compiz$
 ^\.config$
+^\.cpan$
 ^\.dbus$
 ^\.dc\+\+$
 ^\.dmrc$
 ^\.dropbox(-dist)?$
+^\.eclipse$
 ^\.ecryptfs$
 ^\.esd_auth$
 ^\.FBReader$
@@ -78,6 +81,7 @@ syntax: regexp
 ^\.pulse$
 ^\.pulse-cookie$
 ^\.python-eggs$
+^\.quodlibet
 ^\.recently-used(\.xbel)?$
 ^\.rnd$
 ^\.Skype$
