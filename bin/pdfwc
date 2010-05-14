@@ -1,0 +1,8 @@
+#!/bin/sh
+# pdfwc: Word count on PDFs.
+
+file=$1
+[ -z "$file" ] && exit 1
+shift
+
+pdftotext "$file" - | egrep '\w\w\w+' | wc $@
