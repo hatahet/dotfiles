@@ -25,6 +25,7 @@ syntax: regexp
 
 # Apps and dynamic/local stuff
 ^\.adobe$
+^\.anki$
 ^\.appcfg_(cookies|nag)$
 ^\.appdata$
 ^\.aptitude$
@@ -39,6 +40,7 @@ syntax: regexp
 ^\.dc\+\+$
 ^\.dmrc$
 ^\.dropbox(-dist)?$
+^\.dvdcss$
 ^\.eclipse$
 ^\.ecryptfs$
 ^\.esd_auth$
@@ -79,7 +81,9 @@ syntax: regexp
 ^\.quodlibet
 ^\.recently-used(\.xbel)?$
 ^\.rnd$
+^\.rvm$
 ^\.Skype$
+^\.speech-dispatcher$
 ^\.ssh$
 ^\.subversion$
 ^\.sudo_as_admin_successful$
@@ -89,8 +93,10 @@ syntax: regexp
 ^\.update-notifier$
 ^\.viminfo$
 ^\.vim/(spell|\.netrwhist)$
+^\.VirtualBox$
 ^\.w3m$
 ^\.wapi$
+^\.warsow-0.5$
 ^\.wine$
 ^\.Xauthority$
 ^\.xsession-errors(\.old)?$
