@@ -3,7 +3,7 @@
 # for examples
 
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+if [[ ! -z "$PS1" ]]; then
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
@@ -120,7 +120,7 @@ c() {
         cd "$@"
         ;;
     esac
-    ls
+    ls --color=auto
 }
 if shopt -q cdable_vars; then
     complete -v -F _cd -o nospace c
@@ -137,3 +137,7 @@ complete -F _ssh proxy
 
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+fi
