@@ -132,6 +132,10 @@ if [ -f /etc/bash_completion -a -f $HOME/.bash_completion ]; then
     source $HOME/.bash_completion
 fi
 
+if [ -f $HOME/local/bashrc ]; then
+    source $HOME/local/bashrc
+fi
+
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH
 
