@@ -42,8 +42,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Alias definitions.
-if [ -f $HOME/.bash_aliases ]; then
-    source $HOME/.bash_aliases
+if [ -f $HOME/.bash/aliases ]; then
+    source $HOME/.bash/aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -52,8 +52,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     source /etc/bash_completion
     # Also enable local completions.
-    if [ -f $HOME/.bash_completion ]; then
-        source $HOME/.bash_completion
+    if [ -f $HOME/.bash/completion ]; then
+        source $HOME/.bash/completion
     fi
 fi
 
