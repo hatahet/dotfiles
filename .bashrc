@@ -122,18 +122,15 @@ c() {
     esac
     ls --color=auto
 }
-if shopt -q cdable_vars; then
-    complete -v -F _cd -o nospace c
-else
-    complete -F _cd -o nospace c
-fi
 alias mq='hg -R $(hg root)/.hg/patches'
 
 s() {
     ssh $* -t -- 'screen -D -R login'
 }
-complete -F _ssh s
-complete -F _ssh proxy
+
+if [ -f /etc/bash_completion -a -f $HOME/.bash_completion ]; then
+    source $HOME/.bash_completion
+fi
 
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH

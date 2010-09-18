@@ -1,0 +1,9 @@
+# local bash completion file
+if shopt -q cdable_vars; then
+    complete -v -F _cd -o nospace c
+else
+    complete -F _cd -o nospace c
+fi
+
+complete -F _ssh s
+complete -F _ssh proxy
