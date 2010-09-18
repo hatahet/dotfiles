@@ -1,12 +1,27 @@
 syntax: regexp
 
 # Ignore common Ubuntu directories
+^Books$
 ^Desktop$
+^Documents$
 ^Downloads$
 ^Dropbox$
 ^Maildir$
 ^Movies$
+^Music$
+^Pictures$
+^Public$
 ^Ubuntu One$
+
+# OS X specific
+\.DS_Store
+\.Trash
+^Library$
+^Sites$
+^\.CFUserTextEncoding$
+^\.Spotlight-V[0-9]+$
+^\.account$
+^\.fseventsd$
 
 # My commonly used directories
 ^code$
@@ -71,6 +86,7 @@ syntax: regexp
 ^\.mission-control$
 ^\.mozilla$
 ^\.mysql_history$
+^\.nx$
 ^\.openoffice\.org$
 ^\.openvpn$
 ^\.pki$
@@ -78,6 +94,7 @@ syntax: regexp
 ^\.pulse$
 ^\.pulse-cookie$
 ^\.python-eggs$
+^\.qt$
 ^\.quodlibet
 ^\.recently-used(\.xbel)?$
 ^\.rnd$
