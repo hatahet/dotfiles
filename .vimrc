@@ -2,6 +2,7 @@ syntax enable
 filetype plugin indent on
 set ts=4 sw=4 et
 se modeline
+se modelines=10
 se bg=dark
 
 map <F3> :make
