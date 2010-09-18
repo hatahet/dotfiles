@@ -57,6 +57,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     fi
 fi
 
+# Expand existing completion for wrapped aliases.
+if [ -f $HOME/.bash/wrap_alias ]; then
+    source $HOME/.bash/wrap_alias
+fi
+
 # Run site-local bashrc.
 if [ -f $HOME/local/bashrc ]; then
     source $HOME/local/bashrc
