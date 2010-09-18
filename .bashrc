@@ -120,7 +120,7 @@ c() {
         cd "$@"
         ;;
     esac
-    ls --color=auto
+    ls
 }
 alias mq='hg -R $(hg root)/.hg/patches'
 
