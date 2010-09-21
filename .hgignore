@@ -119,4 +119,5 @@ syntax: regexp
 ^\.warsow-0.5$
 ^\.wine$
 ^\.Xauthority$
+^\.xmonad/xmonad(-x86_64-linux|\.(errors|hi|o))$
 ^\.xsession-errors(\.old)?$
