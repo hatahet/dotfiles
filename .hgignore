@@ -91,6 +91,7 @@ syntax: regexp
 ^\.nx$
 ^\.openoffice\.org$
 ^\.openvpn$
+^\.p4config$
 ^\.pki$
 ^\.Private$
 ^\.pulse$
