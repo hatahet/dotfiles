@@ -21,6 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# include local bin if it exists
+if [ -d "$HOEM/local/bin" ]; then
+    PATH="$HOME/local/bin:$PATH"
+fi
+
 if [ -d /opt/nrn/x86_64/bin/ ]; then
     PATH="$PATH:/opt/nrn/x86_64/bin/"
 fi
