@@ -53,6 +53,7 @@ syntax: regexp
 ^\.cpan$
 ^\.dbus$
 ^\.dc\+\+$
+^\.dmenu_cache$
 ^\.dmrc$
 ^\.dropbox(-dist)?$
 ^\.dvdcss$
@@ -66,6 +67,7 @@ syntax: regexp
 ^\.gegl-0.0$
 ^\.gimp-2.6$
 ^\.gksu.lock$
+^\.gmrun_history$
 ^\.gnome2$
 ^\.gnupg$
 ^\.gnuplot_history$
