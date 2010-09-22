@@ -75,6 +75,7 @@ syntax: regexp
 ^\.google$
 ^\.gstreamer-0.10$
 ^\.gtk-bookmarks$
+^\.htoprc$
 ^\.ICEauthority$
 ^\.ipython$
 ^\.irb_history$
