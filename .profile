@@ -22,7 +22,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # include local bin if it exists
-if [ -d "$HOEM/local/bin" ]; then
+if [ -d "$HOME/local/bin" ]; then
     PATH="$HOME/local/bin:$PATH"
 fi
 
