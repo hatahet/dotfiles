@@ -40,3 +40,8 @@ fi
 
 export EDITOR=vim
 export PAGER=less
+
+# run local profile if it exists
+if [ -f "$HOME/local/profile" ]; then
+    . "$HOME/local/profile"
+fi
