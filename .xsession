@@ -3,4 +3,6 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true \
        --height 12 &
 gnome-settings-daemon &
 gnome-power-manager &
+gnome-volume-control-applet &
+glifeguard &
 xmonad
