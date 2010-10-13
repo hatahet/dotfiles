@@ -1,3 +1,7 @@
+if [ -f $HOME/local/bashrc_pre ]; then
+    source $HOME/local/bashrc_pre
+fi
+
 # .bashrc_interactive
 # ignoredups and ignorespace
 HISTCONTROL=ignoreboth
@@ -62,13 +66,12 @@ if [ -f $HOME/.bash/wrap_alias ]; then
     source $HOME/.bash/wrap_alias
 fi
 
-# Run site-local bashrc.
-if [ -f $HOME/local/bashrc ]; then
-    source $HOME/local/bashrc
-fi
-
 CDPATH=.:$HOME/code:$HOME/Documents:$HOME
 export CDPATH
+
+if [ -f $HOME/local/bashrc_post ]; then
+    source $HOME/local/bashrc_post
+fi
 
 # Set up env for Ruby Version Manager, if available.
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
