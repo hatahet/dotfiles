@@ -1,6 +1,6 @@
 trayer --edge top --align right --SetDockType true --SetPartialStrut true \
-       --expand true --width 10 --transparent true --tint 0x191970 \
-       --height 12 &
+       --expand true --width 10 --height 12 --transparent true --alpha 0 \
+       --tint 0x000000 &
 gnome-settings-daemon &
 gnome-power-manager &
 gnome-volume-control-applet &
