@@ -17,7 +17,7 @@ then
     exit 0
 fi
 
-foo=`mktemp -td testc.XXXXXX`
+foo=`mktemp -d -t testc.XXXXXX`
 input=$foo/test.c
 output=$foo/test
 
