@@ -24,6 +24,6 @@ main = do
         ]
         where
             myLayout = avoidStruts $ Tall 1 (3/100) (1/2)
-                ||| ThreeCol 1 (3/100) (1/2)
+                ||| ThreeCol 1 (3%100) (1%3)
                 ||| spiral (3 % 4)
                 ||| Full
