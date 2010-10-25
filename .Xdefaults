@@ -1,4 +1,4 @@
-URxvt*font: xft:Inconsolata:size=12
+URxvt*font: xft:Inconsolata:size=10
 URxvt*scrollBar:false
 URxvt*background:  #000000
 URxvt*foreground:  #7f7f7f
