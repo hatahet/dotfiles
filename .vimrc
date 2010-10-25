@@ -36,3 +36,6 @@ noremap  :nohlsearch
 
 se backupdir=/var/tmp/vimbackup
 se dir=/tmp/vimswap
+if filereadable($HOME . "/local/vimrc")
+    source $HOME/local/vimrc
+endif
