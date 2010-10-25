@@ -4,5 +4,5 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true \
 gnome-settings-daemon &
 gnome-power-manager &
 gnome-volume-control-applet &
-glifeguard &
+x-terminal-emulator &
 xmonad
