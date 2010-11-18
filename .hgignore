@@ -66,6 +66,7 @@ syntax: regexp
 ^\.gconfd$
 ^\.gegl-0.0$
 ^\.gimp-2.6$
+^\.gitk$
 ^\.gksu.lock$
 ^\.gmrun_history$
 ^\.gnome2$
