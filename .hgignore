@@ -83,6 +83,7 @@ syntax: regexp
 ^\.irssi/(default\.theme|config\.autosave)$
 ^\.java$
 ^\.kde$
+^\.lastpass$
 ^\.lesshst$
 ^\.local$
 ^\.m2$
