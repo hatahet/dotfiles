@@ -7,3 +7,5 @@ syntax: regexp
 \.log$
 # Compiled Python files
 .*\.pyc$
+# NFS junk
+(^|/)\.nfs[0-9a-f]+$
