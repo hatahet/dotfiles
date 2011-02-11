@@ -47,7 +47,7 @@ fi
 function log2syslog() {
   declare command
   command=$(fc -ln -0)
-  logger -p local1.notice -t bash -i - $USER : $command
+  logger -p local1.notice -t bash -i -- $USER : $command
 }
 trap log2syslog DEBUG
 
