@@ -92,6 +92,7 @@ syntax: regexp
 ^\.mozilla$
 ^\.mysql_history$
 ^\.nx$
+^\.nvidia-settings-rc$
 ^\.openoffice\.org$
 ^\.openvpn$
 ^\.p4config$
