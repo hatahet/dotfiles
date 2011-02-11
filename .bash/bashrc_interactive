@@ -77,9 +77,11 @@ fi
 
 # Send everything I do to syslog.
 function log2syslog() {
+  declare -i stat=$?
   declare command
   command=$(fc -ln -0)
-  logger -p local1.notice -t bash -i -- $USER : $command
+  logger -p local1.notice -t bash -i -- \
+    "${stat}:${PWD}:${USER}:${command#	 }"
 }
 trap log2syslog DEBUG
 
