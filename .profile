@@ -44,12 +44,5 @@ if [ ! -d /var/tmp/vimbackup ]; then
     mkdir /var/tmp/vimbackup
 fi
 
-function log2syslog() {
-  declare command
-  command=$(fc -ln -0)
-  logger -p local1.notice -t bash -i -- $USER : $command
-}
-trap log2syslog DEBUG
-
 export EDITOR=vim
 export PAGER=less
