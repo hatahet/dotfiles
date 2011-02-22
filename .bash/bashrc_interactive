@@ -75,15 +75,5 @@ if [ -f $HOME/local/bashrc_post ]; then
     source $HOME/local/bashrc_post
 fi
 
-# Send everything I do to syslog.
-function log2syslog() {
-  declare -i stat=$?
-  declare command
-  command=$(fc -ln -0)
-  logger -p local1.notice -t bash -i -- \
-    "${stat}:${PWD}:${USER}:${command#	 }"
-}
-trap log2syslog DEBUG
-
 # Set up env for Ruby Version Manager, if available.
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
