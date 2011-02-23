@@ -35,6 +35,9 @@ syntax: regexp
 ^workspace$
 ^writing$
 
+# devio.us web dir
+^public_html$
+
 # Proxy hax :-)
 ^bin/proxyoff$
 
