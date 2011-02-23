@@ -74,8 +74,8 @@ syntax: regexp
 ^\.gmrun_history$
 ^\.gnome2$
 ^\.gnupg$
-^\.gnuplot_history$
 ^\.gnuplot-wxt$
+^\.gnuplot_history$
 ^\.google$
 ^\.gstreamer-0.10$
 ^\.gtk-bookmarks$
@@ -116,8 +116,8 @@ syntax: regexp
 ^\.thumbnails$
 ^\.update-manager-core$
 ^\.update-notifier$
-^\.viminfo$
 ^\.vim/(spell|\.netrwhist)$
+^\.viminfo$
 ^\.VirtualBox$
 ^\.w3m$
 ^\.wapi$
