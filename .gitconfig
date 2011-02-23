@@ -1,3 +1,5 @@
 [user]
 	name = Steve Dee
 	email = steve@smartercode.net
+[merge]
+	tool = meld

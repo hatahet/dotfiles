@@ -1,3 +1,5 @@
+# vim:ft=sh
+
 if [ -f $HOME/local/bashrc_pre ]; then
     source $HOME/local/bashrc_pre
 fi

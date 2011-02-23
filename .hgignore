@@ -70,6 +70,7 @@ syntax: regexp
 ^\.gconfd$
 ^\.gegl-0.0$
 ^\.gimp-2.6$
+^\.gitk$
 ^\.gksu.lock$
 ^\.gmrun_history$
 ^\.gnome2$
@@ -86,6 +87,7 @@ syntax: regexp
 ^\.irssi/(default\.theme|config\.autosave)$
 ^\.java$
 ^\.kde$
+^\.lastpass$
 ^\.lesshst$
 ^\.local$
 ^\.m2$
@@ -94,6 +96,7 @@ syntax: regexp
 ^\.mozilla$
 ^\.mysql_history$
 ^\.nx$
+^\.nvidia-settings-rc$
 ^\.openoffice\.org$
 ^\.openvpn$
 ^\.p4config$
