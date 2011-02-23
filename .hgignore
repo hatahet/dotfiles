@@ -43,6 +43,7 @@ syntax: regexp
 
 # Apps and dynamic/local stuff
 ^\.adobe$
+^\.android$
 ^\.anki$
 ^\.appcfg_(cookies|nag)$
 ^\.appdata$
@@ -123,5 +124,6 @@ syntax: regexp
 ^\.warsow-0.5$
 ^\.wine$
 ^\.Xauthority$
+^\.Xmodmap$
 ^\.xmonad/xmonad(-x86_64-linux|\.(errors|hi|o))$
 ^\.xsession-errors(\.old)?$
