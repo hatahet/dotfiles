@@ -13,6 +13,9 @@ syntax: regexp
 ^Public$
 ^Ubuntu One$
 
+# Ignore my site-specific directory
+^local$
+
 # OS X specific
 \.DS_Store
 \.Trash
