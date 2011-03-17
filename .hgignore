@@ -13,6 +13,9 @@ syntax: regexp
 ^Public$
 ^Ubuntu One$
 
+# Ignore my site-specific directory
+^local$
+
 # OS X specific
 \.DS_Store
 \.Trash
@@ -32,6 +35,9 @@ syntax: regexp
 ^workspace$
 ^writing$
 
+# devio.us web dir
+^public_html$
+
 # Proxy hax :-)
 ^bin/proxyoff$
 
@@ -40,6 +46,7 @@ syntax: regexp
 
 # Apps and dynamic/local stuff
 ^\.adobe$
+^\.android$
 ^\.anki$
 ^\.appcfg_(cookies|nag)$
 ^\.appdata$
@@ -71,8 +78,8 @@ syntax: regexp
 ^\.gmrun_history$
 ^\.gnome2$
 ^\.gnupg$
-^\.gnuplot_history$
 ^\.gnuplot-wxt$
+^\.gnuplot_history$
 ^\.google$
 ^\.gstreamer-0.10$
 ^\.gtk-bookmarks$
@@ -115,13 +122,14 @@ syntax: regexp
 ^\.thumbnails$
 ^\.update-manager-core$
 ^\.update-notifier$
-^\.viminfo$
 ^\.vim/(spell|\.netrwhist)$
+^\.viminfo$
 ^\.VirtualBox$
 ^\.w3m$
 ^\.wapi$
 ^\.warsow-0.5$
 ^\.wine$
 ^\.Xauthority$
+^\.Xmodmap$
 ^\.xmonad/xmonad(-x86_64-linux|\.(errors|hi|o))$
 ^\.xsession-errors(\.old)?$

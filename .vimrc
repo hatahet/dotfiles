@@ -9,7 +9,7 @@ map <F3> :make
 imap <F3> <Esc>:make
 
 se list
-se lcs=tab:»·,trail:·
+se lcs=tab:>-,trail:.
 se sta
 se nu
 
