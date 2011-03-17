@@ -6,6 +6,7 @@ alias ah='aptitude show'
 
 alias l='ls -CF'
 alias ll='ls -l'
+alias lh='ls -lh'
 alias la='ls -lA'
 
 alias v='vim'
