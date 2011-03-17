@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$STY" = "" ]; then
+  exit
+else
+  screen -t t 8 top
+  screen -t i 9 irssi
+fi
