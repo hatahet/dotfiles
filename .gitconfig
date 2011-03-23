@@ -3,3 +3,14 @@
 	email = steve@smartercode.net
 [merge]
 	tool = meld
+[diff]
+[color]
+    ui = auto
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    di = diff
+    dc = diff --cached
+    amend = commit --amend
+    aa = add --all
