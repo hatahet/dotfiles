@@ -1,1 +1,1 @@
-set ts=8 sw=8 et ai
+set ts=2 sw=2 et ai
