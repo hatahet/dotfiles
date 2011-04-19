@@ -1,4 +1,4 @@
-# vim:ft=sh
+#!/bin/bash
 # .bash_aliases
 
 alias ai='sudo aptitude install'
@@ -34,5 +34,13 @@ s() {
     ssh $* -t -- 'screen -D -R login'
 }
 
-alias work='s mrdomino@redding.mtv'
-alias wolf='s mrdomino@devio.us'
+function mkhostalias {
+    alias=$1
+    host=$2
+    user=${3:-mrdomino}
+    alias $alias="s $user@$host"
+}
+
+mkhostalias wolfman devio.us
+mkhostalias grey grey.i
+mkhostalias redding redding.mtv
