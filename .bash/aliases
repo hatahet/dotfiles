@@ -1,3 +1,4 @@
+# vim:ft=sh
 # .bash_aliases
 
 alias ai='sudo aptitude install'
@@ -32,3 +33,6 @@ alias mq='hg -R $(hg root)/.hg/patches'
 s() {
     ssh $* -t -- 'screen -D -R login'
 }
+
+alias work='s mrdomino@redding.mtv'
+alias wolf='s mrdomino@devio.us'
