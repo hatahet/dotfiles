@@ -87,7 +87,7 @@ syntax: regexp
 ^\.ICEauthority$
 ^\.ipython$
 ^\.irb_history$
-^\.irssi/(default\.theme|config\.autosave)$
+^\.irssi$
 ^\.java$
 ^\.kde$
 ^\.lastpass$
