@@ -1,3 +1,4 @@
+#!/bin/bash
 # .bash_aliases
 
 alias ai='sudo aptitude install'
@@ -32,3 +33,14 @@ alias mq='hg -R $(hg root)/.hg/patches'
 s() {
     ssh $* -t -- 'screen -D -R login'
 }
+
+function mkhostalias {
+    alias=$1
+    host=$2
+    user=${3:-mrdomino}
+    alias $alias="s $user@$host"
+}
+
+mkhostalias wolfman devio.us
+mkhostalias grey grey.i
+mkhostalias redding redding.mtv
