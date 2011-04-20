@@ -94,6 +94,7 @@ syntax: regexp
 ^\.lesshst$
 ^\.local$
 ^\.m2$
+^\.matlab$
 ^\.macromedia$
 ^\.mission-control$
 ^\.mozilla$
