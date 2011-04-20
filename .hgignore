@@ -72,6 +72,7 @@ syntax: regexp
 ^\.gconf$
 ^\.gconfd$
 ^\.gegl-0.0$
+^\.ghc$
 ^\.gimp-2.6$
 ^\.gitk$
 ^\.gksu.lock$
@@ -94,6 +95,7 @@ syntax: regexp
 ^\.lesshst$
 ^\.local$
 ^\.m2$
+^\.matlab$
 ^\.macromedia$
 ^\.mission-control$
 ^\.mozilla$
