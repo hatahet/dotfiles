@@ -1,7 +1,7 @@
 autodetach on
 defflow off
 defutf8 on
-escape "``"
+escape "^Z^Z"
 hardstatus alwayslastline "%{= kr}%?%-Lw%?%{= rw}%n*%f %t%?(%u)%?%{= kr}%?%+Lw%?%{= kr} %=%H %l | %c %m/%d/%Y"
 startup_message off
 unsetenv DISPLAY
