@@ -36,13 +36,5 @@ if [ -d /opt/nrn/x86_64/bin/ ]; then
     PATH="$PATH:/opt/nrn/x86_64/bin/"
 fi
 
-if [ ! -d /tmp/vimswap ];  then
-    mkdir /tmp/vimswap
-fi
-
-if [ ! -d /var/tmp/vimbackup ]; then
-    mkdir /var/tmp/vimbackup
-fi
-
 export EDITOR=vim
 export PAGER=less

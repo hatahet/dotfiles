@@ -93,6 +93,7 @@ syntax: regexp
 ^\.kde$
 ^\.lastpass$
 ^\.lesshst$
+^\.links$
 ^\.local$
 ^\.m2$
 ^\.matlab$
