@@ -1,3 +1,6 @@
+se nocompatible
+se backspace=2
+
 syntax enable
 filetype plugin indent on
 set ts=4 sw=4 et
